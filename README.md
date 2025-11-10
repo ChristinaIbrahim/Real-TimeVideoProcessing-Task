@@ -5,15 +5,15 @@ The goal is to create a real-time web application that captures live video from 
 
 - Capture live camera feed.
 - Send each frame to the backend for processing.
-- Backend draws a red semi-transparent shape (4 random points) and generates 5 new random points.
-- Frontend draws a blue semi-transparent shape using the 5 points received from backend.
+- Backend draws a red transparent shape (4 random points) and generates 5 new random points.
+- Frontend draws a blue transparent shape using the 5 points received from backend.
 
 ### Frontend (Angular)
 
 - Live camera capture and display.
-- Two video panels:
+- Two video:
   - Left: Raw feed.
-  - Right: Processed feed with overlays.
+  - Right: Processed feed showing both overlays (red from backend, blue from frontend).
 - Draws blue transparent shape using backend points.
 - Shows frame number and delay.
 - Built with Angular, TypeScript, HTML5 Canvas, and Socket.IO.
@@ -23,7 +23,6 @@ The goal is to create a real-time web application that captures live video from 
 - Processes frame using OpenCV.
 - Draws red transparent shape with 4 random points.
 - Generates 5 new random points and sends them back with the processed frame.
-- Handles multiple users simultaneously.
 
 ## Tech Stack
 
@@ -38,7 +37,7 @@ npm install
 ng serve --o ( to open on localhost direct)
 
 ### Backend
-```bash
+
 cd Backend
 pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 5000
