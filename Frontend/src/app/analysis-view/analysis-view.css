@@ -1,0 +1,29 @@
+h4{
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 90%;
+  color: rgb(101, 21, 42);
+
+}
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.video-col {
+  text-align: center;
+}
+
+.video-canvas {
+  border: 2px solid #333;
+  border-radius: 6px;
+  width: 640px;
+  height: 480px;
+  background: black;
+}
+
